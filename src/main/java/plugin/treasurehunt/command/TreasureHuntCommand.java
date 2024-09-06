@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Objects;
 import java.util.SplittableRandom;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
@@ -379,7 +380,7 @@ public class TreasureHuntCommand implements CommandExecutor, Listener {
       int count = entry.getValue();
       for (int i = 0; i < count; i++) {
         Location location = getEntitySpawnLocation(player);
-        Entity entity = location.getWorld().spawnEntity(location,entityType);
+        Entity entity = Objects.requireNonNull(location.getWorld()).spawnEntity(location,entityType);
 
         if (entity instanceof Rabbit rabbit) {
           rabbit.setInvulnerable(true);

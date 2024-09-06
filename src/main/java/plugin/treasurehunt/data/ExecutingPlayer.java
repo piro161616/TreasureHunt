@@ -26,17 +26,4 @@ public class ExecutingPlayer {
 
   private static List<ExecutingPlayer> executingPlayerList = new ArrayList<>();
 
-  public static void addPlayerScore(ExecutingPlayer executingPlayer) {
-    executingPlayerList.add(executingPlayer);
-  }
-
-  public static List<ExecutingPlayer> selectList() {
-    return new ArrayList<>(executingPlayerList);
-  }
-
-  // ゲーム時間とスコアをリセット
-  public void resetScore() {
-    this.score = 0;
-  }
-
 }
