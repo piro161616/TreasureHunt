@@ -41,7 +41,7 @@ Spigot：1.20.6<BR>
 <!-- 該当するプロジェクトの中から任意のものを選ぶ-->
 <p style="display: inline">
   <!-- バックエンドの言語一覧 -->
-  <img src="https://img.shields.io/badge/-Python-F2C63C.svg?logo=python&style=for-the-badge">
+  <img src="https://img.shields.io/badge/-Python-F2C63C.svg?logo=java&style=for-the-badge">
   <!-- ミドルウェア一覧 -->
   <img src="https://img.shields.io/badge/-MySQL-4479A1.svg?logo=mysql&style=for-the-badge&logoColor=white">
   <!-- インフラ一覧 -->
