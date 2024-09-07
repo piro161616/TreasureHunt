@@ -34,3 +34,18 @@ Spigot：1.20.6
 ■追記
 ウサギをスペシャルエンティティとして登場させました。
 しかしあまりにも素早いため、スポーンした場所に留まってもらう設定にしました。
+
+<div id="top"></div>
+
+## 使用技術一覧
+
+<!-- シールド一覧 -->
+<!-- 該当するプロジェクトの中から任意のものを選ぶ-->
+<p style="display: inline">
+  <!-- バックエンドの言語一覧 -->
+  <img src="https://img.shields.io/badge/-Python-F2C63C.svg?logo=python&style=for-the-badge">
+  <!-- ミドルウェア一覧 -->
+  <img src="https://img.shields.io/badge/-MySQL-4479A1.svg?logo=mysql&style=for-the-badge&logoColor=white">
+  <!-- インフラ一覧 -->
+  <img src="https://img.shields.io/badge/-githubactions-FFFFFF.svg?logo=github-actions&style=for-the-badge">
+</p>
