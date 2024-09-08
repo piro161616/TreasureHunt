@@ -11,7 +11,7 @@
 １分以内　３０点<BR>
 ウサギボーナス スコア×２倍<BR>
 
-<B>■ゲーム詳細</B>
+<B>■ゲーム詳細</B><BR>
 1./treasurehuntコマンドを入力すると、制限時間１分のゲームが開始<BR>
 
 2.キツネを探して右クリックするとゲーム終了。ウサギを先に捕まえるとボーナスでスコアが２倍に<BR>
@@ -31,6 +31,9 @@ URL: jdbc:mysql://localhost:3306/treasure_hunt<BR>
 Minecraft：1.20.6<BR>
 Spigot：1.20.6<BR>
 ※動作確認はWindowsのみ実施<BR>
+
+<B>■プレイ動画</B><BR>
+https://github.com/user-attachments/assets/59e2a20d-611d-44cb-aa1d-26cdc5a21042
 
 <B>■ 追記</B><BR>
 ウサギをスペシャルエンティティとして登場させました。<BR>
