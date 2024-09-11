@@ -44,7 +44,7 @@ import plugin.treasurehunt.mapper.data.PlayerScore;
  * スコアは捕まえるまでの秒数で変わります。
  * １分以内に捕まえられなければゲームオーバー。
  * キツネを捕まえる前にボーナスウサギを捕まえると、スコアが2倍になります。
- * 結果はプレイヤー名、スコア、日時が保存されます。
+ * 結果はSQLにプレイヤー名、スコア、日時が保存されます。
  */
 
 public class TreasureHuntCommand implements CommandExecutor, Listener {
@@ -91,7 +91,7 @@ public class TreasureHuntCommand implements CommandExecutor, Listener {
       return false;
     }
 
-    new GameStartCountdown(player).runTaskTimer(main,0,SECONDS_TO_TICKS);
+    startCountdown(player);
 
     return true;
   }
@@ -111,45 +111,18 @@ public class TreasureHuntCommand implements CommandExecutor, Listener {
     return player;
   }
 
-
-  public class GameStartCountdown extends BukkitRunnable implements Listener {
-    private int nowTime;
-    private final Player player;
-
-    public GameStartCountdown(Player player) {
-      this.nowTime = 10;  // タイトル表示５秒＋カウントダウン５秒
-      this.player = player;
-    }
-
-
-    @Override
-    public void run() {
-      if (nowTime <= 0) {
-        player.sendTitle(ChatColor.GOLD + "START!!", "", 0, SECONDS_TO_TICKS, 0);
-        cancel();
-        gameStart(player);
-        return;
-      } else if (nowTime == 10) {
-        player.sendTitle("キツネを探せ！",
-            "1分以内にキツネを右クリックで捕まえて。",
-            0, 5 * SECONDS_TO_TICKS, SECONDS_TO_TICKS);
-      } else if(nowTime <= 5) {
-        player.sendTitle(ChatColor.GOLD + "開始まであと" + nowTime + "秒",
-            "ウサギを右クリックでボーナススコア！",
-            0, SECONDS_TO_TICKS,0);
-      }
-      nowTime--;
-    }
+  public void startCountdown(Player player){
+    new GameStartCountdown(this,player).runTaskTimer(main,0,SECONDS_TO_TICKS);
   }
 
 
-  private void gameStart(Player player) {
+  public void gameStart(Player player) {
     isGameActive = true;
     gameStartTime = Instant.now();
     currentExecutingPlayer = new ExecutingPlayer(player.getName(),0, gameStartTime);
     rabbitClicked = false;
 
-    EntitiesSpawn(player);
+    entitiesSpawn(player);
 
     player.sendMessage(ChatColor.GOLD +
         "ヒント: キツネの前にウサギをクリックするとスコア2倍！ウサギは１匹だけ！");
@@ -366,7 +339,7 @@ public class TreasureHuntCommand implements CommandExecutor, Listener {
    *
    * @param player  コマンドを実行したプレイヤー
    */
-  public void EntitiesSpawn(Player player) {
+  public void entitiesSpawn(Player player) {
     entitySpawnCounts.clear();
     entitySpawnCounts.put(EntityType.PANDA, 20);
     entitySpawnCounts.put(EntityType.ARMADILLO, 20);
