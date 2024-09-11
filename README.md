@@ -26,13 +26,23 @@
 パスワード: （コードを確認してください）<BR>
 データベース名: treasure_hunt<BR>
 URL: jdbc:mysql://localhost:3306/treasure_hunt<BR>
+CREATE TABLE文：<BR>
+  Table: treasure_hunt<BR>
+Create Table: CREATE TABLE `treasure_hunt` (<BR>
+  `id` int NOT NULL AUTO_INCREMENT,<BR>
+  `player_name` varchar(100) DEFAULT NULL,<BR>
+  `score` int DEFAULT NULL,<BR>
+  `registered_at` datetime DEFAULT NULL,<BR>
+  PRIMARY KEY (`id`)<BR>
+) ENGINE=InnoDB AUTO_INCREMENT=39 DEFAULT CHARSET=utf8mb3<BR>
+1 row in set (0.00 sec)<BR>
 
 <B>■ 対応バージョン</B><BR>
 Minecraft：1.20.6<BR>
 Spigot：1.20.6<BR>
 ※動作確認はWindowsのみ実施<BR>
 
-<B>■プレイ動画</B><BR>
+<B>■プレイ動画URL</B><BR>
 https://github.com/user-attachments/assets/59e2a20d-611d-44cb-aa1d-26cdc5a21042
 
 <B>■ 追記</B><BR>
