@@ -42,8 +42,10 @@ Minecraft：1.20.6<BR>
 Spigot：1.20.6<BR>
 ※動作確認はWindowsのみ実施<BR>
 
-<B>■プレイ動画URL</B><BR>
-https://github.com/user-attachments/assets/59e2a20d-611d-44cb-aa1d-26cdc5a21042
+<B>■プレイ動画とURL</B><BR>
+![Description of GIF](https://private-user-images.githubusercontent.com/173275523/366932321-0cc0d00d-ce06-452e-ad89-5856f2531ccd.gif?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjYxNTMwMDcsIm5iZiI6MTcyNjE1MjcwNywicGF0aCI6Ii8xNzMyNzU1MjMvMzY2OTMyMzIxLTBjYzBkMDBkLWNlMDYtNDUyZS1hZDg5LTU4NTZmMjUzMWNjZC5naWY_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwOTEyJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDkxMlQxNDUxNDdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT03ZjczN2I1ODkxZjRmZDEyNWYyYTJiYzQxODAyNzIzNjBmMGMxZTk0NjA5ZGUzZWJiNDhhYzg2YmY4YzlmYjQ2JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.LvAf-oCsdDqd7KwxwXd92Y1se3p9WglLQFpLoi1AFYs)<BR>
+
+https://github.com/user-attachments/assets/59e2a20d-611d-44cb-aa1d-26cdc5a21042<BR>
 
 <B>■ 追記</B><BR>
 ウサギをスペシャルエンティティとして登場させました。<BR>
