@@ -1,0 +1,5 @@
+data/mysql.sock
+data/*
+!data/.gitkeep
+tore --staged .
+
