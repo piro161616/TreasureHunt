@@ -35,7 +35,11 @@ Create Table: CREATE TABLE `treasure_hunt` (<BR>
   `registered_at` datetime DEFAULT NULL,<BR>
   PRIMARY KEY (`id`)<BR>
 ) ENGINE=InnoDB AUTO_INCREMENT=39 DEFAULT CHARSET=utf8mb3<BR>
-1 row in set (0.00 sec)<BR>
+
+<B>■コンテナの起動</B></BR>
+このゲームのスコアデータ保存にDockerを使用しています。<BR>
+プロジェクトのルートディレクトリに移動し、以下のコマンドでコンテナを起動してください。<BR>
+docker-compose up -d<BR>
 
 <B>■ 対応バージョン</B><BR>
 Minecraft：1.20.6<BR>
