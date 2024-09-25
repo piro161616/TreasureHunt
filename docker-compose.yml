@@ -1,0 +1,17 @@
+version: '3'
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: th-mysql-container
+    environment:
+      MYSQL_ROOT_PASSWORD: minato001
+      MYSQL_DATABASE: treasure_hunt
+      MYSQL_USER: root
+      MYSQL_PASSWORD:minato001
+      TZ: 'Asia/Tokyo'
+    volumes:
+      - ./Docker/init.sql:/docker-entrypoint-initdb.d/init.sql
+      - ./data:/var/lib/mysql
+    ports:
+      - "3306:3306"
+    restart: always
